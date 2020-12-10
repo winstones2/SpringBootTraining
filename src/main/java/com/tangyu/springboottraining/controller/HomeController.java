@@ -19,7 +19,7 @@ public class HomeController {
         return "intro";
     }
 
-    @RequestMapping("/")
+    @RequestMapping(value = {"/", "/home"})
     public ModelAndView home(@RequestParam(value = "count", defaultValue = "1") int count) {
         ModelAndView mav = new ModelAndView("home");
         mav.addObject("count", count + 1);

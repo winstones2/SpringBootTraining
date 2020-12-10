@@ -7,5 +7,6 @@
 <body>
     <div>id: ${user.id}</div>
     <div>name: ${user.name}</div>
+    <div><a href="download">download</a></div>
 </body>
 </html>
